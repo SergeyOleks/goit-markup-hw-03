@@ -1,0 +1,332 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    width: 1600px;
+}
+
+
+:root {
+    --primary-text-color: #212121;
+    --text-color-buttonlink: #2196F3;
+    --text-color-active:#ffffff;
+    --text-color:#757575;
+    --background-button:#F5F4FA;
+    --background-first-section:#2F303A;
+    --color-logo:#000000;
+    --color-footer-mail-phone:rgba(255, 255, 255, 0.6);
+}
+
+.main{   
+    margin: 0, auto;
+}
+.main-button{
+   
+    display: inline-block;
+    width: 216px;
+    height: 50px;
+    min-height: 50px;
+
+    background-color: var(--text-color-buttonlink);
+    color: var(--text-color-active);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+}
+.button{
+    background-color: var(--background-button);
+    border: none;
+    cursor: pointer;
+}
+.button:hover,
+.button:focus{
+    background-color: var(--text-color-buttonlink);
+    color:var(--text-color-active);
+    border: none;
+}
+/* Центрующий контейнер */
+.container{
+    width: 1170px;  
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* header */
+.header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    gap:345px;
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    gap: 95px;
+}
+.header-contact-container{
+    display: flex;
+    gap: 50px;
+}
+.logo {
+    text-decoration: none;
+    color: var(--color-logo);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    height: 31px;
+}
+
+.logo-web {
+    color: var(--text-color-buttonlink);
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    height: 16px;
+    padding: 0;
+}
+.nav-list a{    
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-item a{
+    text-decoration: none;
+}
+
+.nav-item:hover a{
+    color: var(--text-color-buttonlink);
+}
+
+.header-mail{
+    text-decoration: none;
+    color: var(--text-color);  
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+.header-mail:hover,
+.header-mail:focus{
+    color: var(--text-color-buttonlink);
+}
+.header-phone{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.header-phone:hover,
+.header-phone:focus {
+    color: var(--text-color-buttonlink);
+}
+.nav-item{
+    list-style: none;
+}
+
+/* первая секция */
+.first-section{
+    background-color: var(--background-first-section);
+    height: 600px;
+    padding: 200px;
+    margin-bottom: 95px;
+
+}
+.first-section-container{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-tittle{
+    width: 696px;
+    color: var(--text-color-active);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+/* вторая секция */
+.features-list .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.features-list .text{
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.71;     
+    letter-spacing: 0.03em;
+    width: 270px;
+}
+
+.features-list{
+    display: flex;
+    gap:30px;
+    list-style: none;
+}
+
+/* секция чем мы занимаемся*/
+.about{
+    margin-bottom: 95px;
+}
+.about-head{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    height: 42px;
+}
+.about-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/*секция наша команда */
+
+.team-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 95px;
+}
+.team-head{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-profession{
+    color: var(--text-color); 
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*footer */
+.footer{
+    background-color: var(--background-first-section);
+    height: 250px;
+    padding: 60px;
+}
+.address{
+    color: var(--text-color-active);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.footer-phone{
+    color: var(--color-footer-mail-phone);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer-mail{
+    text-decoration: none;
+    color: var(--color-footer-mail-phone);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;    
+}
+.footer .logo{
+    color: var(--text-color-active);
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+.footer-address-container{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+}
+
+/*gallery*/
+.gallery{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1170px;
+    padding: 0;
+}
+.list-buttons{
+    display: flex;
+    gap:8px;
+    list-style: none;
+    justify-content: center;
+}
+
+.list-buttons-item{
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 16px; 
+    font-weight: 500px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.gallery-item a{   
+    text-decoration: none;
+}
+.gallery-item{
+    list-style: none;
+
+}
+.gallery-head{  
+    color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 20px auto 4px;    
+}
+.gallery-text{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin: 0 auto;    
+}
