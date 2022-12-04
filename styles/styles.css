@@ -10,7 +10,7 @@ body{
     border: none;
     font-family: 'Roboto', sans-serif;
     list-style: none;
-    width: 1600px;
+    /* width: 1600px; */
 }
 
 
@@ -23,6 +23,7 @@ body{
     --background-first-section:#2F303A;
     --color-logo:#000000;
     --color-footer-mail-phone:rgba(255, 255, 255, 0.6);
+    --color-border: #eeeeee;
 }
 
 .main{   
@@ -37,6 +38,11 @@ body{
 
     background-color: var(--text-color-buttonlink);
     color: var(--text-color-active);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 4px;
 }
@@ -53,9 +59,9 @@ body{
 }
 /* Центрующий контейнер */
 .container{
-    width: 1170px;  
+    width: 1200px;  
     margin: 0 auto;
-    padding: 0;
+    padding: 0 15px;
 }
 
 /* header */
@@ -97,6 +103,7 @@ body{
     justify-content: space-between;
     width: 280px;
     height: 16px;
+    margin: 0 auto;
     padding: 0;
 }
 .nav-list a{    
@@ -147,9 +154,7 @@ body{
 .first-section{
     background-color: var(--background-first-section);
     height: 600px;
-    padding: 200px;
-    margin-bottom: 95px;
-
+    padding: 200px 0;
 }
 .first-section-container{
     height: 200px;
@@ -161,6 +166,7 @@ body{
 .main-tittle{
     width: 696px;
     color: var(--text-color-active);
+    margin: 0 0 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -171,6 +177,9 @@ body{
 }
 
 /* вторая секция */
+.features {
+    padding: 95px 0;
+}
 .features-list .title{
     font-weight: 700;
     font-size: 14px;
@@ -178,6 +187,7 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-style: normal;
+    margin: 0 0 10px;
 }
 
 .features-list .text{
@@ -186,6 +196,7 @@ body{
     line-height: 1.71;     
     letter-spacing: 0.03em;
     width: 270px;
+    margin: 0 0;
 }
 
 .features-list{
@@ -196,7 +207,7 @@ body{
 
 /* секция чем мы занимаемся*/
 .about{
-    margin-bottom: 95px;
+    padding: 0 0 95px;
 }
 .about-head{
     font-weight: 700;
@@ -205,6 +216,7 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     height: 42px;
+    margin: 0 0 50px;
 }
 .about-list{
     display: flex;
@@ -213,12 +225,16 @@ body{
 }
 
 /*секция наша команда */
+.team{
+    padding: 95px 0;
+}
 
 .team-list{
     display: flex;
     gap: 30px;
     list-style: none;
-    margin-bottom: 95px;
+    margin: 0 0 95px;
+    padding: 0;
 }
 .team-head{
     font-size: 36px;
@@ -241,12 +257,14 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
 }
+.team-name-profession{
+    padding: 30px 0;
+}
 
 /*footer */
 .footer{
     background-color: var(--background-first-section);
-    height: 250px;
-    padding: 60px;
+    padding: 60px 0;
 }
 .address{
     color: var(--text-color-active);
@@ -295,33 +313,36 @@ body{
 }
 .list-buttons{
     display: flex;
-    gap:8px;
+    gap:8px;    
     list-style: none;
     justify-content: center;
-}
-
-.list-buttons-item{
+    margin: 95px 0 35px;
+    padding: 0;
+}   
+.list-buttons-item>.button{
+    padding: 6px 22px;
+    color: var(--primary-text-color);
     font-weight: 500;
     line-height: 26px;
-    font-size: 16px; 
-    font-weight: 500px;
+    font-size: 16px;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    letter-spacing: 0.03em;    
 }
 .gallery-item a{   
     text-decoration: none;
 }
 .gallery-item{
+    width: 370px;
+    height: 405px;
     list-style: none;
-
+    border: 1px solid var(--color-border);
 }
 .gallery-head{  
+    margin: 0;
     color: var(--primary-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin: 20px auto 4px;    
 }
 .gallery-text{
     color: var(--text-color);
@@ -329,4 +350,7 @@ body{
     line-height: 1.88;
     letter-spacing: 0.03em;
     margin: 0 auto;    
+}
+.gallery-head-text{
+    padding: 20px 25px;
 }
